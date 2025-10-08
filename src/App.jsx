@@ -62,7 +62,6 @@ const Resume = () => {
 
           <div className="relative z-10 flex justify-between items-start">
             <div className="flex items-center gap-6">
-              {/* Profile Photo */}
               {/* <img
                 src="/ananthi-resume/public/profile.jpeg"
                 alt="Profile"
