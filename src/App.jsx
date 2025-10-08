@@ -1,101 +1,12 @@
-import React from "react";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Linkedin,
-  Github,
-  Award,
-  Briefcase,
-  GraduationCap,
-  BookOpen,
-} from "lucide-react";
-
-// Resume data in JSON format
-const resumeData = {
-  personalInfo: {
-    name: "Ananthi S",
-    email: "ananthis47@gmail.com",
-    phone: "8438 XXX XXX",
-    location: "Chennai",
-    linkedin: "linkedin.com/in/ananthis",
-    github: "github.com/ananthis",
-  },
-  summary:
-    "A Seasoned Professional with a blend of Tech and HR Expertise, starting as an IT developer and transitioning into Strategic HR roles post-MBA. Proven success in internal staffing, Business Associate hiring, and resource management as an RMG Business Partner. Currently driving senior leadership assessment and mobility (LeaD), with a focus on streamlining end-to-end talent operations.",
-  experienceSummary:
-    "A total of 9 years of experience with TCS (Tata Consultancy Services) and around 5 years of experience in HR roles. Multiple Location Exposure in TCS: Chennai",
-  workExperience: [
-    {
-      title: "HR Specialist, Leadership Assessments",
-      company: "Leadership & Diversity (LeaD), TCS",
-      period: "Apr 2023 - Present",
-      responsibilities: [
-        "Responsible for Leadership Assessments Centre for enablement and acceleration of senior leadership mobility and advancements",
-        "Led end-to-end operations and provided in-depth reporting and analytics, driving data-driven decisions",
-        "Published timely dashboards and reports, achieving 100% SLA compliance with 80% improvement in turnaround time",
-        "Proactive profiling of feeder pool for leadership opportunities across various career streams",
-      ],
-    },
-    {
-      title: "RMG Business Partner",
-      company: "CBG, TCS",
-      period: "Jul 2020 - Sep 2022",
-      responsibilities: [
-        "Managed workforce of 2000+ across multiple clients (TTH EU&UK, TTH ANZ), achieving 100% adherence to staffing SLAs",
-        "Collaborated with Business and Delivery heads in workforce planning, contributing to business growth and revenue generation",
-        "Handled end-to-end recruitment and lifecycle management of contract employees, negotiating with vendors to reduce costs",
-        "Partnered with HRBPs for resignation reversal and Talent Development team for cross-skilling initiatives",
-      ],
-    },
-    {
-      title: "Developer",
-      company: "BFSI, TCS",
-      period: "Jul 2016 - Jun 2018",
-      responsibilities: [
-        "Supported code deployment, testing processes and demo video creation",
-        "Participated in Big room planning with the client and served as Proxy Scrum Master for offshore team",
-      ],
-    },
-  ],
-  education: [
-    {
-      degree: "PGDM",
-      institution: "Thiagarajar School of Management",
-      specialization: "Dual Specialization in HR and Marketing",
-    },
-    {
-      degree: "BE - Computer Science",
-      institution: "National Engineering College",
-    },
-  ],
-  certifications: [
-    {
-      name: "Managerial Fundamentals: Foundation Program (Previously ASCENT)",
-      date: "Sep 2024",
-      description:
-        "First-Time Leader Program covering Project management principles, empathy, EI",
-    },
-    {
-      name: "AI Transformation Program for HR",
-      date: "Jun 2024",
-      description:
-        "AI in HR landscape—talent acquisition, employee engagement, workforce analytics",
-    },
-  ],
-  awards: [
-    "Awards for Excellence, tcsAI Spark (Aug 2024)",
-    "Beyond Performance Awards, Xcelerate Warrior Certificate (Jun 2024)",
-    "On the Spot Award (Jul 2021)",
-  ],
-};
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { resumeData } from "./data";
 
 const Resume = () => {
   return (
-    <div className="min-h-screen bg-gray-50 py-8 px-4 print:bg-white print:py-0">
+    <div className="min-h-screen bg-gray-50 print:bg-white print:py-0">
       <div className="max-w-4xl mx-auto bg-white shadow-lg print:shadow-none">
         {/* Header */}
-        <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white px-8 py-6 print:py-4">
+        {/* <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white px-8 py-6 print:py-4">
           <h1 className="text-3xl font-bold mb-2 print:text-2xl">
             {resumeData.personalInfo.name}
           </h1>
@@ -111,6 +22,81 @@ const Resume = () => {
             <div className="flex items-center gap-1">
               <MapPin size={14} />
               <span>{resumeData.personalInfo.location}</span>
+            </div>
+          </div>
+        </div> */}
+
+        {/* Header */}
+        {/* <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white px-8 py-6 print:py-4">
+          <div className="flex justify-between items-start">
+            <div>
+              <h1 className="text-3xl font-bold mb-1 print:text-2xl">
+                {resumeData.personalInfo.name}
+              </h1>
+              <p className="text-lg text-blue-100 print:text-base">
+                {resumeData.personalInfo.title}
+              </p>
+            </div>
+            <div className="flex flex-col gap-2 text-sm print:text-xs text-right">
+              <div className="flex items-center justify-end gap-2">
+                <span>{resumeData.personalInfo.email}</span>
+                <Mail size={14} />
+              </div>
+              <div className="flex items-center justify-end gap-2">
+                <span>{resumeData.personalInfo.phone}</span>
+                <Phone size={14} />
+              </div>
+              <div className="flex items-center justify-end gap-2">
+                <span>{resumeData.personalInfo.location}</span>
+                <MapPin size={14} />
+              </div>
+            </div>
+          </div>
+        </div> */}
+
+        {/* Header */}
+        <div className="relative bg-gradient-to-br from-blue-200 via-white to-blue-200 px-8 py-8 print:py-6 overflow-hidden">
+          {/* Decorative overlay pattern */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-blue-900/5 to-transparent rounded-full -translate-y-1/2 translate-x-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-blue-900/5 to-transparent rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+          <div className="relative z-10 flex justify-between items-start">
+            <div className="flex items-center gap-6">
+              {/* Profile Photo */}
+              {/* <img
+                src="/ananthi-resume/public/profile.jpeg"
+                alt="Profile"
+                className="w-24 h-24 rounded-full object-cover border-2 border-blue-900 shadow-md print:w-20 print:h-20"
+              /> */}
+              <div>
+                <h1 className="text-6xl font-bold text-gray-900 mb-2 print:text-3xl">
+                  {resumeData.personalInfo.name}
+                </h1>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-12 bg-blue-900"></div>
+                  <p className="text-2xl text-blue-900 font-medium print:text-lg">
+                    {resumeData.personalInfo.title}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col gap-2 text-sm print:text-xs bg-white/60 backdrop-blur-sm px-4 py-3 rounded-lg border border-blue-100">
+              <div className="flex items-center gap-2 text-gray-700">
+                <Mail size={14} className="text-blue-900" />
+                <span>{resumeData.personalInfo.email}</span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-700">
+                <Phone size={14} className="text-blue-900" />
+                <span>{resumeData.personalInfo.phone}</span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-700">
+                <MapPin size={14} className="text-blue-900" />
+                <span>{resumeData.personalInfo.location}</span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-700">
+                <Linkedin size={14} className="text-blue-900" />
+                <span>{resumeData.personalInfo.linkedin}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -215,11 +201,6 @@ const Resume = () => {
               ))}
             </ul>
           </section>
-        </div>
-
-        {/* Footer note for print */}
-        <div className="hidden print:block text-center text-xs text-gray-500 pb-2">
-          Use Ctrl+P (Windows) or Cmd+P (Mac) to save as PDF
         </div>
       </div>
     </div>
