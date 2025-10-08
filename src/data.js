@@ -1,6 +1,6 @@
 export const resumeData = {
   personalInfo: {
-    name: "Ananthi Subbiah",
+    name: "Ananthi S",
     email: "ananthis47@gmail.com",
     phone: "8438 244 109",
     location: "Chennai",
